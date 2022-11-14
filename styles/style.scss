@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+@import './variables';
+
+@mixin displayFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  @include displayFlex();
+
+  background-color: $main-background;
+  font-family: 'Inter', sans-serif;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.card {
+  background-color: $card-background;
+}
