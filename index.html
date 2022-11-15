@@ -22,7 +22,7 @@
         text-align: center;
         color: #fff;
         position: fixed;
-        bottom: 1%;
+        bottom: 0;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -33,13 +33,13 @@
     <div class="card">
       <div class="card-content">
         <h2 class="card-content__title">
-          Get insights that help your business grow.
+          Get <span>insights</span> that help your business grow.
         </h2>
         <p class="card-content__description">
           Discover the benefits of data analytics and make better decisions
           regarding revenue, customer experience, and overall efficiency.
         </p>
-        <div class="stats">
+        <div class="card-content__stats">
           <div class="stats-item">
             <h3 class="stats-item__heading">10k+</h3>
             <p class="stats-item__description">companies</p>
@@ -49,12 +49,20 @@
             <p class="stats-item__description">templates</p>
           </div>
           <div class="stats-item">
-            <h3 class="stats-item__heading">12m+</h3>
+            <h3 class="stats-item__heading">12M+</h3>
             <p class="stats-item__description">queries</p>
           </div>
         </div>
       </div>
-      <div class="card-image"></div>
+      <div class="card-image">
+        <picture>
+          <source
+            media="(min-width: 576px)"
+            srcset="./images/image-header-desktop.jpg"
+          />
+          <img src="./images/image-header-mobile.jpg" alt="" />
+        </picture>
+      </div>
     </div>
 
     <footer class="attribution">
